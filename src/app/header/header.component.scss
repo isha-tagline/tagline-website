@@ -1,0 +1,19 @@
+.btn-primary{
+    background-color: rgba(217,97,34,.3);
+    color: #da6427!important;
+    border: none;
+}
+
+.nav-link{
+    color: black;
+    padding: 10px 20px !important;
+    font-weight: 500;
+}
+
+.header-fix{
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    box-shadow: 0 0 8px rgb(0 0 0 / 8%);
+}

@@ -1,0 +1,23 @@
+.client-testimonial{
+    position: relative;
+}
+
+.client-testimonial::before{
+    position: absolute;
+    content: "";
+    width: 80%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #F7F7F7;
+}
+
+.offset-content {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 70px;
+}

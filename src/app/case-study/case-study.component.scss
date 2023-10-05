@@ -1,0 +1,48 @@
+.green-box{
+    background: linear-gradient(132.35deg,rgba(24,166,137,.8) -9.94%,rgba(19,54,92,.8) 112.44%);
+}
+
+.yellow-box{
+    background: linear-gradient(98.75deg,rgba(254,162,72,.75) -5%,rgba(254,137,17,.75) 104.22%);
+}
+
+.light-box{
+    background: linear-gradient(114.85deg,rgba(0,112,187,.8) -8.35%,rgba(0,151,210,.8) 108.68%);
+}
+
+.blue-box{
+    background: linear-gradient(107.36deg,rgba(0,159,253,.75) -8.2%,rgba(42,42,114,.75) 109.89%);
+}
+
+.gray-box{
+    background: linear-gradient(101.93deg,rgba(31,31,31,.75) -7.33%,rgba(129,129,129,.75) 107.06%);
+}
+
+.main-box{
+    position: relative;
+    padding: 28px;
+    margin-bottom: 24px;
+    min-height: 335px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.main-logo{
+    margin-top: auto;
+}
+
+.bg-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.main-box p{
+    line-height: 30px!important;
+    color: #FFFFFF!important;
+    margin: 24px 0 0;
+}
