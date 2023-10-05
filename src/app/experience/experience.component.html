@@ -2,8 +2,8 @@
     <div class="container">
         <div class="row align-items-center d-flex">
             <div class="col-6 text-light">
-                <h4>We have the experience</h4>
-                <p class="exp-detail">We have got the experience to make your dream come true, and these stats speak for themselves: we have 350+ clients worldwide in only five years, and we have worked on over 650+ projects, all of which have been finished successfully and on schedule, with 100% client satisfaction. We also have 250K+ hours of freelancing experience.</p>
+                <h4>{{title}}</h4>
+                <p class="exp-detail">{{title_detail}}</p>
                 <a href="#" class="btn">Contact us</a>
             </div>
             <div class="contact-woman row-width">
@@ -13,35 +13,34 @@
                 <ul class="d-flex flex-wrap justify-content-center">
                     <li>
                         <div class="text-center">
-                            <img src="assets/image/experience1.webp" alt="experience1">
-                            <p class="exp-section-text">150+</p>
-                            <p class="secound-p">Professional</p>
+                            <img [src]="imgPath1" alt="experience1">
+                            <p class="exp-section-text">{{expArr[0].detail}}</p>
+                            <p class="secound-p">{{expArr[0].p}}</p>
                         </div>
                     </li>
                     <li>
                         <div class="text-center">
-                            <img src="assets/image/experiance2.webp" alt="experiance2">
-                            <p class="exp-section-text">650+</p>
-                            <p class="secound-p">Completed Projects</p>
+                            <img [src]="imgPath2" alt="experiance2">
+                            <p class="exp-section-text">{{expArr[1].detail}}</p>
+                            <p class="secound-p">{{expArr[1].p}}</p>
                         </div>
                     </li>
                     <li>
                         <div class="text-center">
-                            <img src="assets/image/experiance3.webp" alt="experiance3">
-                            <p class="exp-section-text">250+</p>
-                            <p class="secound-p">Freelance Hours</p>
+                            <img [src]="imgPath3" alt="experiance3">
+                            <p class="exp-section-text">{{expArr[2].detail}}</p>
+                            <p class="secound-p">{{expArr[2].p}}</p>
                         </div>
                     </li>
                     <li>
                         <div class="text-center">
-                            <img src="assets/image/experiance4.webp" alt="experiance4">
-                            <p class="exp-section-text">50+</p>
-                            <p class="secound-p">Years of experience</p>
+                            <img [src]="imgPath4" alt="experiance4">
+                            <p class="exp-section-text">{{expArr[3].detail}}</p>
+                            <p class="secound-p">{{expArr[3].p}}</p>
                         </div>
                     </li>
                 </ul>
-            </div>
-            
+            </div>           
         </div>
     </div>
 </section>

@@ -1,45 +1,43 @@
 <div>
     <div class="container main-header-section">
-        <h3 >Case Studies</h3>
+        <h3 >{{title}}</h3>
         <span class="main-header-line"></span>
     </div>
     <div class="container">
         <div class="row mb-2">
             <div class="col-5">
                 <div class="main-box blue-box">
-                    <img src="assets/image/white-logo1.png" alt="white-logo1" class="main-logo">
-                    <p>Recognition, manage nominations, offer rewards, & automate service anniversaries. By developing such a recognized application.</p>
-                    <img src="assets/image/wrapper1.webp" alt="wrapper1" class="bg-wrapper">
+                    <img src="{{caseArr[0].src}}" alt="white-logo1" class="main-logo">
+                    <p>{{caseArr[0].p}}</p>
+                    <img [src]="imgPath1" alt="wrapper1" class="bg-wrapper">
                 </div>
             </div>
             <div class="col-7">
                 <div class="main-box yellow-box">
-                    <img src="assets/image/white-logo2.png" alt="white-logo2" class="main-logo">
-                    <p>Replace confusing spreadsheets with marketing calendar software built for marketing teams.</p>
-                    <img src="assets/image/warpper2.webp" alt="warpper2" class="bg-wrapper">
+                    <img src="{{caseArr[1].src}}" alt="white-logo2" class="main-logo">
+                    <p>{{caseArr[1].p}}</p>
+                    <img [src]="imgPath2" alt="warpper2" class="bg-wrapper">
                 </div>
             </div>
-        </div>
-        <div class="row mb-5">
             <div class="col-6">
                 <div class="main-box gray-box">
-                    <img src="assets/image/white-logo3.png" alt="white-logo3" class="main-logo">
-                    <p>Make better stock investing decisions by joining the most exclusive community of stock investors. Learn, share & grow through authentic real-time discussion.</p>
-                    <img src="assets/image/wrapper3.webp" alt="wrapper3" class="bg-wrapper">
+                    <img src="{{caseArr[1].src}}" alt="white-logo3" class="main-logo">
+                    <p>{{caseArr[2].p}}</p>
+                    <img [src]="imgPath3" alt="wrapper3" class="bg-wrapper">
                 </div>
             </div>
             <div class="col-3">
                 <div class="main-box green-box">
-                    <img src="assets/image/white-logo4.png" alt="white-logo4" class="main-logo">
-                    <p>Complete Business Solutions for your dental clinic.</p>
-                    <img src="assets/image/wrapper5.webp" alt="wrapper5" class="bg-wrapper">
+                    <img src="{{caseArr[3].src}}" alt="white-logo4" class="main-logo">
+                    <p>{{caseArr[3].p}}</p>
+                    <img [src]="imgPath4" alt="wrapper5" class="bg-wrapper">
                 </div>
             </div>
             <div class="col-3">
                 <div class="main-box light-box">
-                    <img src="assets/image/white-logo5.png" alt="white-logo5" class="main-logo">
-                    <p class="">Build Healthy Habits. Stay Accountable. Share, Learn & Act on Insights.</p>
-                    <img src="assets/image/wrapper6.webp" alt="wrapper6" class="bg-wrapper">
+                    <img src="{{caseArr[4].src}}" alt="white-logo5" class="main-logo">
+                    <p>{{caseArr[4].p}}</p>
+                    <img [src]="imgPath5" alt="wrapper6" class="bg-wrapper">
                 </div>
             </div>
         </div>
