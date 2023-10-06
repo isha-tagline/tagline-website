@@ -7,71 +7,64 @@
         <div class="row">
             <div class="left-section col-7">
                 <div class="row">
-                    <div class="developer-box col me-1">
-                        <h6>Hire Mobile App Developers</h6>
-                        <div class="icons">
+                    <div class="developer-box mb-2" [ngClass]="developer.class" *ngFor="let developer of developers">
+                        <h6>{{developer.h6}}</h6>
+                        <div class="icons"  [ngClass]="dev.className" *ngFor="let dev of developer.details">
                             <div class="icon-row">
-                                <img src="assets/image/react_native_color.svg" alt="react_native_color">
+                                <img [src]="dev.imgPath" alt="react_native_color">
                                 <a href="#" class="d-flex">
-                                    <p>Hire React Native  <br> Developers
-                                    <img src="assets/image/up-arrow.svg" alt="upArrow"></p>
-                                </a>
-                            </div>
-                            <div class="icon-row">
-                                <img src="assets/image/flutter_color.svg" alt="flutter_color">
-                                <a href="#" class="d-flex">
-                                    <p>Hire Flutter Developers
+                                    <p>{{dev.p}}
                                     <img src="assets/image/up-arrow.svg" alt="upArrow"></p>
                                 </a>
                             </div>
                         </div>
-                    </div>
-                    <div class="developer-box col ms-1">
-                        <h6>Hire Front-End Developers</h6>
-                        <div class="icons">
+                    <!-- </div>  
+                    <div class="developer-box col ms-1"> -->
+                        <!-- <h6></h6> -->
+                        <!-- <div class="icons">
                             <div class="icon-row">
-                                <img src="assets/image/angular_color.svg" alt="angular_color">
+                                <img src="" alt="angular_color">
                                 <a href="#" class="d-flex">
-                                    <p>Hire AngularJs <br> Developers
+                                    <p>
                                     <img src="assets/image/up-arrow.svg" alt="upArrow"></p>
                                 </a>
                             </div>
                             <div class="icon-row">
                                 <img src="assets/image/react_native_color.svg" alt="react_native_color">
                                 <a href="#" class="d-flex">
-                                    <p>Hire ReactJs <br> Developers
+                                    
                                     <img src="assets/image/up-arrow.svg" alt="upArrow"></p>
                                 </a>
                             </div>
-                        </div>
-                    </div>
-                </div>
+                        </div> -->
+                    <!-- </div> -->
+                    <!-- </div>
                 <div class="row">
-                    <div class="developer-box mt-2">
-                        <h6>Hire Back-End Developers</h6>
-                        <div class="icons">
+                    <div class="developer-box mt-2"> -->
+                        <!-- <h6></h6> -->
+                        <!-- <div class="icons">
                             <div class="icon-row">
-                                <img src="assets/image/paython_color.svg" alt="python_color">
+                                <img src="" alt="python_color">
                                 <a href="#" class="d-flex">
-                                    <p>Hire Python <br> Developers
+                                    <p>
                                     <img src="assets/image/up-arrow.svg" alt="upArrow"></p>
                                 </a>
                             </div>
                             <div class="icon-row">
-                                <img src="assets/image/ruby_color.svg" alt="ruby_color">
+                                <img src="" alt="ruby_color">
                                 <a href="#" class="d-flex">
                                     <p>Hire ROR Developers
                                     <img src="assets/image/up-arrow.svg" alt="upArrow"></p>
                                 </a>
                             </div>
                             <div class="icon-row">
-                                <img src="assets/image/node_js_color.svg" alt="nodejs_color">
+                                <img src="" alt="nodejs_color">
                                 <a href="#" class="d-flex">
-                                    <p>Hire Node.js <br> Developers
+                                    <p>
                                     <img src="assets/image/up-arrow.svg" alt="upArrow"></p>
                                 </a>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>

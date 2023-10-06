@@ -4,41 +4,11 @@
         <span class="main-header-line"></span>
     </div>
     <div class="container">
-        <div class="row mb-2">
-            <div class="col-5">
-                <div class="main-box blue-box">
-                    <img src="{{caseArr[0].src}}" alt="white-logo1" class="main-logo">
-                    <p>{{caseArr[0].p}}</p>
-                    <img [src]="imgPath1" alt="wrapper1" class="bg-wrapper">
-                </div>
-            </div>
-            <div class="col-7">
-                <div class="main-box yellow-box">
-                    <img src="{{caseArr[1].src}}" alt="white-logo2" class="main-logo">
-                    <p>{{caseArr[1].p}}</p>
-                    <img [src]="imgPath2" alt="warpper2" class="bg-wrapper">
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="main-box gray-box">
-                    <img src="{{caseArr[1].src}}" alt="white-logo3" class="main-logo">
-                    <p>{{caseArr[2].p}}</p>
-                    <img [src]="imgPath3" alt="wrapper3" class="bg-wrapper">
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="main-box green-box">
-                    <img src="{{caseArr[3].src}}" alt="white-logo4" class="main-logo">
-                    <p>{{caseArr[3].p}}</p>
-                    <img [src]="imgPath4" alt="wrapper5" class="bg-wrapper">
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="main-box light-box">
-                    <img src="{{caseArr[4].src}}" alt="white-logo5" class="main-logo">
-                    <p>{{caseArr[4].p}}</p>
-                    <img [src]="imgPath5" alt="wrapper6" class="bg-wrapper">
-                </div>
+        <div class="row">
+            <div class="main-box" [ngClass]="case.className" *ngFor="let case of caseArr">
+                <img [src]="case.src" alt="white-logo1" class="main-logo">
+                <p>{{case.p}}</p>
+                <img [src]="case.imgPath" alt="wrapper1" class="bg-wrapper">
             </div>
         </div>
     </div>

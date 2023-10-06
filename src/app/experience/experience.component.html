@@ -10,33 +10,12 @@
                 <img src="assets/image/woman.webp" alt="woman">
             </div>
             <div class="col-6">
-                <ul class="d-flex flex-wrap justify-content-center">
+                <ul class="d-flex flex-wrap justify-content-center" *ngFor="let exp of expArr">
                     <li>
                         <div class="text-center">
-                            <img [src]="imgPath1" alt="experience1">
-                            <p class="exp-section-text">{{expArr[0].detail}}</p>
-                            <p class="secound-p">{{expArr[0].p}}</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="text-center">
-                            <img [src]="imgPath2" alt="experiance2">
-                            <p class="exp-section-text">{{expArr[1].detail}}</p>
-                            <p class="secound-p">{{expArr[1].p}}</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="text-center">
-                            <img [src]="imgPath3" alt="experiance3">
-                            <p class="exp-section-text">{{expArr[2].detail}}</p>
-                            <p class="secound-p">{{expArr[2].p}}</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="text-center">
-                            <img [src]="imgPath4" alt="experiance4">
-                            <p class="exp-section-text">{{expArr[3].detail}}</p>
-                            <p class="secound-p">{{expArr[3].p}}</p>
+                            <img [src]="exp.imgPath" alt="experience1">
+                            <p class="exp-section-text">{{exp.detail}}</p>
+                            <p class="secound-p">{{exp.p}}</p>
                         </div>
                     </li>
                 </ul>
